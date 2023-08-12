@@ -123,6 +123,53 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &45116658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 45116660}
+  - component: {fileID: 45116659}
+  m_Layer: 0
+  m_Name: Pivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &45116659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45116658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a662b921e408454197672a156e43808, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 53565491}
+  player2Controller: {fileID: 924306231}
+  player3Controller: {fileID: 468131662}
+--- !u!4 &45116660
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45116658}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &53565486
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,7 +526,7 @@ GameObject:
   - component: {fileID: 468131663}
   - component: {fileID: 468131662}
   m_Layer: 0
-  m_Name: Personaje (1)
+  m_Name: Personaje2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -751,10 +798,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9847a9b86efc41c40b0e0c6f72f0e581, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _followSpeed: 6
+  _followSpeed: 100
   _target: {fileID: 53565488}
-  _target2: {fileID: 468131666}
-  _target3: {fileID: 924306235}
+  _target2: {fileID: 924306235}
+  _target3: {fileID: 468131666}
 --- !u!1 &924306230
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,7 +816,7 @@ GameObject:
   - component: {fileID: 924306232}
   - component: {fileID: 924306231}
   m_Layer: 0
-  m_Name: Personaje (2)
+  m_Name: Personaje1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -963,7 +1010,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1270766459}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: bc9d83421c9fa6f459855a86312c3cdc, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1134,7 +1181,8 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 53565488}
-  - {fileID: 468131666}
   - {fileID: 924306235}
+  - {fileID: 468131666}
   - {fileID: 395188044}
   - {fileID: 1270766462}
+  - {fileID: 45116660}

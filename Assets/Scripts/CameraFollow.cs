@@ -6,14 +6,14 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     [SerializeField] private float _followSpeed;
-    [SerializeField] private  Transform _target;
+    [SerializeField] private Transform _target;
     [SerializeField] private Transform _target2;
     [SerializeField] private Transform _target3;
 
-    Vector3 _newPosition;
+    bool t1 = true; 
+    bool t2, t3 = false;
 
-    private bool _cat1Active = true;
-    private bool _cat2Active, _cat3Active = false;
+    Vector3 _newPosition;
 
     private void Start()
     {
@@ -22,42 +22,33 @@ public class CameraFollow : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.C))
         {
-            _cat1Active = true;
-            _cat2Active = false;
-            _cat3Active = false;
-        } else if (Input.GetKeyDown(KeyCode.X))
-        {
-            _cat1Active = false;
-            _cat2Active = true;
-            _cat3Active = false;
-        } else if(Input.GetKeyDown(KeyCode.C))
-        {
-            _cat1Active = false;
-            _cat2Active = false;
-            _cat3Active = true;
+            FollowLeader();
         }
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
-        FollowLeader();
-        transform.position = Vector3.Slerp(transform.position, _newPosition, _followSpeed * Time.deltaTime);
+        if (t1)
+        {
+            _newPosition = _target.position + new Vector3(0f, 0f, -10f);
+        }
+        else if (t2)
+        {
+            _newPosition = _target2.position + new Vector3(0f, 0f, -10f);
+        }
+        else if (t3)
+        {
+            _newPosition = _target3.position + new Vector3(0f, 0f, -10f);
+        }
+        transform.position = Vector3.Lerp(transform.position, _newPosition, _followSpeed * Time.deltaTime);
     }
 
     void FollowLeader()
     {
-        if (_cat1Active)
-        {
-            _newPosition = new Vector3(_target.position.x, _target.position.y, -10f);
-        } else if(_cat2Active)
-        {
-            _newPosition = new Vector3(_target2.position.x, _target2.position.y, -10f);
-        } else if (_cat3Active)
-        {
-            _newPosition = new Vector3(_target3.position.x, _target3.position.y, -10f);
-        }
+        t1 = Input.GetKeyDown(KeyCode.Z);
+        t2 = Input.GetKeyDown(KeyCode.X);
+        t3 = Input.GetKeyDown(KeyCode.C);
     }
 }

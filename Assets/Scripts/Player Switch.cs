@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class PlayerSwitch : MonoBehaviour
 {
-    [SerializeField] public  Behaivour playerController;
-    [SerializeField] public  Behaivour Player2Controller;
-    [SerializeField] public  bool player1Active = true;
+    [SerializeField] private Move playerController;
+    [SerializeField] private Move player2Controller;
+    [SerializeField] private Move player3Controller;
 
-    // Update is called once per frame
+    private void Start()
+    {
+        playerController.enabled = true;
+        player2Controller.enabled = false;
+        player3Controller.enabled = false;
+    }
+
     void Update()
     { 
-        if(input.GetkeyDown(KeyCode.RightSift))
+        if(Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.C))
         {
             SwithcPlayer();
         }
@@ -19,17 +25,22 @@ public class PlayerSwitch : MonoBehaviour
 
     public void SwithcPlayer()
     {
-        if (player1Active)
-        {
-            playerController.enabled = false;
-            Player2Controller.enabled = true;
-            player1Active = false;
-        }
-        else
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             playerController.enabled = true;
-            Player2Contr    oller.enabled = false;
-            player1Active = true;
+            player2Controller.enabled = false;
+            player3Controller.enabled = false;
+        }
+        else if(Input.GetKeyDown(KeyCode.X))
+        {
+            playerController.enabled = false;
+            player2Controller.enabled = true;
+            player3Controller.enabled = false;
+        } else if (Input.GetKeyDown(KeyCode.C))
+        {
+            playerController.enabled = false;
+            player2Controller.enabled = false;
+            player3Controller.enabled = true;
         }
     }
 }
