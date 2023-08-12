@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
+    /*
     private Rigidbody2D rb2d;
 
     [Header("Movimiento")]
@@ -82,4 +83,33 @@ public class Move : MonoBehaviour
         Gizmos.DrawWireCube(_floorController.position, _boxDimensions);
     }
     */
+
+    [SerializeField] private CharacterController2D _controller;
+
+    float _horizontalMove = 0f;
+
+    private bool _jump = false;
+
+    [SerializeField] float _runSpeed = 400f;
+
+    private void Start()
+    {
+        
+    }
+
+    private void Update()
+    {
+        _horizontalMove = Input.GetAxisRaw("Horizontal") * _runSpeed ;
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            _jump = true;
+        }
+    }
+
+    private void FixedUpdate() 
+    {
+        _controller.Motion(_horizontalMove * Time.fixedDeltaTime, false, _jump);
+        _jump = false;
+    }
 }
