@@ -7,7 +7,7 @@ public class Menuinicial : MonoBehaviour
 {
     public void jugar()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Game");
     }
 
     public void salir()

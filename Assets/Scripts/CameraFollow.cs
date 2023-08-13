@@ -5,7 +5,9 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    [SerializeField] private float _followSpeed;
+    [SerializeField] private float _followSpeed = 5f;
+    [SerializeField] private float _yOffSet = 5f;
+
     [SerializeField] private Transform _target;
     [SerializeField] private Transform _target2;
     [SerializeField] private Transform _target3;
@@ -17,7 +19,7 @@ public class CameraFollow : MonoBehaviour
 
     private void Start()
     {
-        _newPosition = new Vector3(_target.position.x, _target.position.y, -10f);
+        _newPosition = new Vector3(_target.position.x, _target.position.y + _yOffSet, -10f);
     }
 
     private void Update()
