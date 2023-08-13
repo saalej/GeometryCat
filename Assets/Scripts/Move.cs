@@ -90,7 +90,7 @@ public class Move : MonoBehaviour
 
     private bool _jump = false;
 
-    [SerializeField] float _runSpeed = 400f;
+    [SerializeField] float _runSpeed = 100f;
 
     private void Start()
     {
