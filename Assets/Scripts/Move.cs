@@ -10,7 +10,7 @@ public class Move : MonoBehaviour
     [Header("Movimiento")]
 
     private float _moveHorizontal;
-    [SerializeField] private float _speed = 500f;
+    [SerializeField] private float _speed = 1000f;
     [Range(0, 0.3f)][SerializeField] private float _smoother;
 
     Vector3 _moveVelocity = Vector3.zero;
@@ -18,7 +18,7 @@ public class Move : MonoBehaviour
     private bool _isRight = false;
 
     [Header("Jump")]
-    [SerializeField] private float _jumpForce = 500f;
+    [SerializeField] private float _jumpForce = 1000f;
     [SerializeField] private LayerMask _floor;
     [SerializeField] private Transform _floorController;
     [SerializeField] private Vector3 _boxDimensions;
