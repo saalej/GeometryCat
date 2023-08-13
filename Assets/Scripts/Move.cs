@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Move : MonoBehaviour
 {
+
+    public UnityEvent OnActivate;
+    public UnityEvent OnDeactivate;
 
     private Rigidbody2D rb2d;
 

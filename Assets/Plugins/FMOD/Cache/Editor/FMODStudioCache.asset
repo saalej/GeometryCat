@@ -1,6 +1,26 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8935266568783673561
+--- !u!114 &-8847604970275055040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Menu.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMOD Studio/Cats/Build/Desktop/Menu.bank
+  Name: Menu
+  StudioPath: bank:/Menu
+  lastModified: 638275445037787504
+  FileSizes:
+  - Name: Desktop
+    Value: 91968
+  Exists: 1
+--- !u!114 &-7679686950476823800
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,16 +30,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Vicctory
+  m_Name: event:/SFX/Objects/FallingDrawers
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Vicctory
+  Path: event:/SFX/Objects/FallingDrawers
   Guid:
-    Data1: -2021818108
-    Data2: 1086771421
-    Data3: 1316981662
-    Data4: -1786115458
+    Data1: -1222317977
+    Data2: 1134576944
+    Data3: -1670284389
+    Data4: -1407304294
   Banks:
-  - {fileID: -6194019504125988765}
+  - {fileID: -2125034828544726877}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -27,6 +47,30 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-6975233847183049597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/GameplayMusic/Botitas
+  m_EditorClassIdentifier: 
+  Name: Botitas
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2356981084
+    data2: 3351906570
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-6877388526011070433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46,7 +90,7 @@ MonoBehaviour:
     Data3: -1894077290
     Data4: -1076454395
   Banks:
-  - {fileID: -6194019504125988765}
+  - {fileID: -8847604970275055040}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -69,7 +113,7 @@ MonoBehaviour:
   Path: ../../FMOD Studio/Cats/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638274766569455057
+  lastModified: 638275445030660503
   FileSizes:
   - Name: Desktop
     Value: 1012
@@ -93,7 +137,7 @@ MonoBehaviour:
     Data3: -11014211
     Data4: -171488969
   Banks:
-  - {fileID: -6194019504125988765}
+  - {fileID: -8847604970275055040}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -101,26 +145,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 296
---- !u!114 &-6194019504125988765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
-  m_EditorClassIdentifier: 
-  Path: ../../FMOD Studio/Cats/Build/Desktop/SFX.bank
-  Name: SFX
-  StudioPath: bank:/SFX
-  lastModified: 638274766589643621
-  FileSizes:
-  - Name: Desktop
-    Value: 2150368
-  Exists: 1
 --- !u!114 &-6174885381537936969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,7 +164,7 @@ MonoBehaviour:
     Data3: -1068056945
     Data4: -535792687
   Banks:
-  - {fileID: -6194019504125988765}
+  - {fileID: -8847604970275055040}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -167,7 +191,7 @@ MonoBehaviour:
     Data3: 129364387
     Data4: -1803747725
   Banks:
-  - {fileID: -6194019504125988765}
+  - {fileID: -2125034828544726877}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -194,7 +218,7 @@ MonoBehaviour:
     Data3: 1395666830
     Data4: 1159799872
   Banks:
-  - {fileID: -6194019504125988765}
+  - {fileID: -2125034828544726877}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -202,6 +226,30 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 54826
+--- !u!114 &-2472083965220589485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Characters_BabakMeow/Babak
+  m_EditorClassIdentifier: 
+  Name: Babak
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3302395323
+    data2: 1521708728
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-2350567875358646695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,10 +265,30 @@ MonoBehaviour:
   Path: ../../FMOD Studio/Cats/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638274766569774234
+  lastModified: 638275445058376953
   FileSizes:
   - Name: Desktop
-    Value: 372672
+    Value: 1833440
+  Exists: 1
+--- !u!114 &-2125034828544726877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Gameplay.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMOD Studio/Cats/Build/Desktop/Gameplay.bank
+  Name: Gameplay
+  StudioPath: bank:/Gameplay
+  lastModified: 638275445036678735
+  FileSizes:
+  - Name: Desktop
+    Value: 2104512
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -238,11 +306,11 @@ MonoBehaviour:
   - {fileID: 3059617980934012891}
   - {fileID: -6633911989375567741}
   - {fileID: -2350567875358646695}
-  - {fileID: -6194019504125988765}
+  - {fileID: -2125034828544726877}
+  - {fileID: -8847604970275055040}
   EditorEvents:
   - {fileID: 5903563263157066307}
   - {fileID: -6174885381537936969}
-  - {fileID: -8935266568783673561}
   - {fileID: -6209669495438366560}
   - {fileID: -4319935851026475559}
   - {fileID: 208307347562992444}
@@ -250,12 +318,17 @@ MonoBehaviour:
   - {fileID: -6877388526011070433}
   - {fileID: 7061865525368419272}
   - {fileID: -3296984127164351569}
+  - {fileID: 6613694626518028445}
+  - {fileID: 7918312472606681190}
+  - {fileID: -7679686950476823800}
+  - {fileID: 8700989122040545439}
+  - {fileID: 4801862068432129814}
   EditorParameters: []
   MasterBanks:
   - {fileID: -6633911989375567741}
   StringsBanks:
   - {fileID: 3059617980934012891}
-  cacheTime: 638274766589643621
+  cacheTime: 638275445058376953
   cacheVersion: 131605
 --- !u!114 &208307347562992444
 MonoBehaviour:
@@ -276,7 +349,7 @@ MonoBehaviour:
     Data3: 748890511
     Data4: 1127562304
   Banks:
-  - {fileID: -6194019504125988765}
+  - {fileID: -8847604970275055040}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -284,6 +357,54 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &1137134647834456542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/GameplayMusic/Ozy
+  m_EditorClassIdentifier: 
+  Name: Ozy
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2537244468
+    data2: 1424313872
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &2253467790003017966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/GameplayMusic/Babak
+  m_EditorClassIdentifier: 
+  Name: Babak
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3302395323
+    data2: 1521708728
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &3059617980934012891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -299,10 +420,10 @@ MonoBehaviour:
   Path: ../../FMOD Studio/Cats/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638274766569475007
+  lastModified: 638275445030720318
   FileSizes:
   - Name: Desktop
-    Value: 1280
+    Value: 1684
   Exists: 1
 --- !u!114 &4358711828162867743
 MonoBehaviour:
@@ -323,7 +444,7 @@ MonoBehaviour:
     Data3: -666020430
     Data4: 1191406150
   Banks:
-  - {fileID: -6194019504125988765}
+  - {fileID: -2125034828544726877}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -331,6 +452,36 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &4801862068432129814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/GameplayMusic
+  m_EditorClassIdentifier: 
+  Path: event:/Music/GameplayMusic
+  Guid:
+    Data1: 1855819994
+    Data2: 1230315122
+    Data3: 485433227
+    Data4: 324185202
+  Banks:
+  - {fileID: -2350567875358646695}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -6975233847183049597}
+  - {fileID: 1137134647834456542}
+  - {fileID: 2253467790003017966}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10666
 --- !u!114 &5903563263157066307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -358,6 +509,33 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 14845
+--- !u!114 &6613694626518028445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Objects/Vicctory_Door
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Objects/Vicctory_Door
+  Guid:
+    Data1: -2021818108
+    Data2: 1086771421
+    Data3: 1316981662
+    Data4: -1786115458
+  Banks:
+  - {fileID: -2125034828544726877}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &7061865525368419272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,7 +555,35 @@ MonoBehaviour:
     Data3: -9828727
     Data4: 1013775842
   Banks:
-  - {fileID: -6194019504125988765}
+  - {fileID: -2125034828544726877}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -2472083965220589485}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &7918312472606681190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Objects/FallingStatue
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Objects/FallingStatue
+  Guid:
+    Data1: -423276957
+    Data2: 1217791384
+    Data3: -1158763903
+    Data4: -310452974
+  Banks:
+  - {fileID: -2125034828544726877}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -385,3 +591,30 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &8700989122040545439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/GameOver
+  m_EditorClassIdentifier: 
+  Path: event:/Music/GameOver
+  Guid:
+    Data1: 1507042427
+    Data2: 1274090563
+    Data3: 833184688
+    Data4: 1859475689
+  Banks:
+  - {fileID: -2350567875358646695}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 6386
