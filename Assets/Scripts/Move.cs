@@ -8,7 +8,8 @@ public class Move : MonoBehaviour
 
     public UnityEvent OnActivate;
     public UnityEvent OnDeactivate;
-
+    public UnityEvent OnJump;
+    
     private Rigidbody2D rb2d;
 
     [Header("Movimiento")]
@@ -70,6 +71,7 @@ public class Move : MonoBehaviour
         {
             _isFloor = false;
             rb2d.AddForce(new Vector2(0f, _jumpForce));
+            OnJump.Invoke();
         }
     }
 
