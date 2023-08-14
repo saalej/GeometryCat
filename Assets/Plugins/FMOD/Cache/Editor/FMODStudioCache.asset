@@ -302,7 +302,7 @@ MonoBehaviour:
   - {fileID: -1202214411334329921}
   StringsBanks:
   - {fileID: 112836224879648411}
-  cacheTime: 638275576408333295
+  cacheTime: 638275619425562585
   cacheVersion: 131605
 --- !u!114 &112836224879648411
 MonoBehaviour:
@@ -319,7 +319,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638275576408333295
+  lastModified: 638275619425562585
   FileSizes:
   - Name: 
     Value: 1684
@@ -366,7 +366,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Gameplay.bank
   Name: Desktop/Gameplay
   StudioPath: bank:/Gameplay
-  lastModified: 638275576408313306
+  lastModified: 638275619425530268
   FileSizes: []
   Exists: 1
 --- !u!114 &1137134647834456542
