@@ -7,12 +7,17 @@ public class Menuinicial : MonoBehaviour
 {
     public void jugar()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Level1");
     }
 
     public void salir()
     {
         Debug.Log("Salir...");
         Application.Quit();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        SceneManager.LoadScene("MenuInicial");
     }
 }

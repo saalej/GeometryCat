@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -28,7 +29,7 @@ public class Move : MonoBehaviour
     [SerializeField] private Transform _floorController;
     [SerializeField] private Vector3 _boxDimensions;
     [SerializeField] private bool _isFloor;
-    private bool _jump = false;
+    bool _jump = false;
 
 
     // Start is called before the first frame update
@@ -42,7 +43,7 @@ public class Move : MonoBehaviour
     {
         _moveHorizontal = Input.GetAxis("Horizontal") * _speed;
 
-        if (Input.GetButtonDown("Jump"))
+        if(Input.GetButtonDown("Jump"))
         {
             _jump = true;
         }
@@ -50,8 +51,8 @@ public class Move : MonoBehaviour
 
     private void FixedUpdate()
     {
-        
         _isFloor = Physics2D.OverlapBox(_floorController.position, _boxDimensions, 0f, _floor);
+        
         Motion(_moveHorizontal * Time.fixedDeltaTime, _jump);
         
         _jump = false;

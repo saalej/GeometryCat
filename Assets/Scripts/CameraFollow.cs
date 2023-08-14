@@ -7,7 +7,6 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     [SerializeField] private float _followSpeed = 5f;
-    [SerializeField] private float _yOffSet = 5f;
 
     [SerializeField] private Move _target;
     [SerializeField] private Move _target2;
