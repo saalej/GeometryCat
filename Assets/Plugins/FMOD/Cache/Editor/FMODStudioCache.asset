@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Music.bank
   Name: Desktop/Music
   StudioPath: bank:/Music
-  lastModified: 638275523986089144
+  lastModified: 638275455717981332
   FileSizes: []
   Exists: 1
 --- !u!114 &-7679686950476823800
@@ -165,7 +165,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Menu.bank
   Name: Desktop/Menu
   StudioPath: bank:/Menu
-  lastModified: 638275523984522379
+  lastModified: 638275455717527333
   FileSizes: []
   Exists: 1
 --- !u!114 &-4319935851026475559
@@ -261,7 +261,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 638275523983759214
+  lastModified: 638275455716929689
   FileSizes: []
   Exists: 1
 --- !u!114 &11400000
@@ -302,7 +302,7 @@ MonoBehaviour:
   - {fileID: -1202214411334329921}
   StringsBanks:
   - {fileID: 112836224879648411}
-  cacheTime: 638275523986089144
+  cacheTime: 638275455717981332
   cacheVersion: 131605
 --- !u!114 &112836224879648411
 MonoBehaviour:
@@ -319,7 +319,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638275523983809142
+  lastModified: 638275455717015791
   FileSizes:
   - Name: 
     Value: 1684
@@ -366,7 +366,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Gameplay.bank
   Name: Desktop/Gameplay
   StudioPath: bank:/Gameplay
-  lastModified: 638275523983629583
+  lastModified: 638275455716823770
   FileSizes: []
   Exists: 1
 --- !u!114 &1137134647834456542
