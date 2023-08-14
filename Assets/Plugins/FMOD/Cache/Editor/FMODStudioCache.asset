@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Music.bank
   Name: Desktop/Music
   StudioPath: bank:/Music
-  lastModified: 638275523986089144
+  lastModified: 638275567392958579
   FileSizes: []
   Exists: 1
 --- !u!114 &-7679686950476823800
@@ -165,7 +165,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Menu.bank
   Name: Desktop/Menu
   StudioPath: bank:/Menu
-  lastModified: 638275523984522379
+  lastModified: 638275567392062011
   FileSizes: []
   Exists: 1
 --- !u!114 &-4319935851026475559
@@ -261,7 +261,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 638275523983759214
+  lastModified: 638275567391226653
   FileSizes: []
   Exists: 1
 --- !u!114 &11400000
@@ -297,12 +297,13 @@ MonoBehaviour:
   - {fileID: -7679686950476823800}
   - {fileID: 8700989122040545439}
   - {fileID: 4801862068432129814}
+  - {fileID: 6644228782808668244}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1202214411334329921}
   StringsBanks:
   - {fileID: 112836224879648411}
-  cacheTime: 638275523986089144
+  cacheTime: 638275567392958579
   cacheVersion: 131605
 --- !u!114 &112836224879648411
 MonoBehaviour:
@@ -319,10 +320,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638275523983809142
+  lastModified: 638275567391276522
   FileSizes:
   - Name: 
-    Value: 1684
+    Value: 1730
   Exists: 1
 --- !u!114 &208307347562992444
 MonoBehaviour:
@@ -366,7 +367,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Gameplay.bank
   Name: Desktop/Gameplay
   StudioPath: bank:/Gameplay
-  lastModified: 638275523983629583
+  lastModified: 638275567391176815
   FileSizes: []
   Exists: 1
 --- !u!114 &1137134647834456542
@@ -519,6 +520,33 @@ MonoBehaviour:
     Data2: 1086771421
     Data3: 1316981662
     Data4: -1786115458
+  Banks:
+  - {fileID: 912038210191514729}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &6644228782808668244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Characters/Jump
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Characters/Jump
+  Guid:
+    Data1: -1175128459
+    Data2: 1132041355
+    Data3: 839861950
+    Data4: -432596861
   Banks:
   - {fileID: 912038210191514729}
   IsStream: 0
